@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #0a0a23;
+    max-width: 80%;
+    text-align: center;
+    margin-inline: auto;
+}
+.container {
+    line-height: 1.5;
+}
+.input-container {
+    border-radius: 0.3rem;
+    padding: 0.3rem 1rem;
+    margin-inline: auto;
+    max-width: 400px;
+    background-color: white;
+}
+.msg {
+    padding-inline: 1rem;
+    color: black;
+}
+#text-input {
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #5a01a7;
+    margin-left: auto;
+    flex-grow: 1;
+}
+.input-field {
+    padding-inline: 1rem;
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: space-evenly;
+}
+#check-btn {
+    color: inherit;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #5a01a7;
+}
+.note {
+    margin-top: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    border: 0.3rem;
+    margin-inline: auto;
+    max-width: 400px;
+    background-color: #00471b;
+}
+.note-text {
+    font-size: 1.2rem;
+}
+#result {
+    margin-block: 0.5rem;
+    color: black;
+}
+.fa-lightbulb {
+    color: yellow;
+}
+
+@media screen and (max-width: 478px) {
+    .input-field {
+        display: block;
+    }
+    #check-btn {
+        margin-top: 0.5rem;
+    }
+    .container {
+        line-height: 1;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .note-text {
+        font-size: 1rem;
+    }
+}
